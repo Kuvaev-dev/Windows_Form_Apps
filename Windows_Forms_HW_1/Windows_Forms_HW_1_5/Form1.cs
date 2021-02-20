@@ -31,22 +31,22 @@ namespace Windows_Forms_HW_1_5
         {
             if ((e.X > label.Location.X - 20 && e.X < label.Location.X + label.Width + 20) && (e.Y > label.Location.Y - 20 && e.Y < label.Location.Y + label.Height + 20))
             {
-                //движение курсора с лева по оси Х
+                //движение курсора слева по оси Х
                 if (e.X > label.Location.X - 20 && e.X < label.Location.X)
                 {
                     label.Left += 10;
                 }
-                //движение курсора с права по оси Х
+                //движение курсора справа по оси Х
                 else if (e.X < label.Location.X + label.Width + 20 && e.X > label.Location.X + label.Width)
                 {
                     label.Left -= 10;
                 }
-                //движение курсора с верху по оси У
+                //движение курсора сверху по оси У
                 else if (e.Y > label.Location.Y - 20 && e.Y < label.Location.Y)
                 {
                     label.Top += 10;
                 }
-                //движение курсора с низу по оси У
+                //движение курсора снизу по оси У
                 else if (e.Y < label.Location.Y + label.Height + 20 && e.Y > label.Location.Y + label.Height)
                 {
                     label.Top -= 10;
@@ -58,7 +58,7 @@ namespace Windows_Forms_HW_1_5
                 }
             }
         }
-        void LableCenter(Label lable) //центрирование статика
+        void LableCenter(Label lable) // центрирование статика
         {
             label.Left = (ClientSize.Width - label.Size.Width) / 2;
             label.Top = (ClientSize.Height - label.Size.Height) / 2;
