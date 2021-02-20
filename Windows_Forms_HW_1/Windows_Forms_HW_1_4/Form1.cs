@@ -37,7 +37,7 @@ namespace Windows_Forms_HW_1_4
                 {
                     Label label = new Label();
                     label.BorderStyle = BorderStyle.Fixed3D;
-                    //определение позиции статика в зависимости с какой стороны его начали расовать
+                    //определение позиции статика в зависимости с какой стороны его начали рисовать
                     if (e.X > X && e.Y > Y)
                     {
                         label.Location = new Point(X, Y);
@@ -65,9 +65,9 @@ namespace Windows_Forms_HW_1_4
                         label.Text = $"{numStatic}";
                         label.ForeColor = Color.White;
                         label.BackColor = Color.Red;
-                        Controls.Add(label);    //Добавление нвого статика в коллекцию элементов управления.
+                        Controls.Add(label);                     // добавление нвого статика в коллекцию элементов управления.
                         Text = $"«Статик» с номер №{label.Text} создан!";
-                        label.MouseClick += LabelMouseClick;    //подписываем на два события для статика
+                        label.MouseClick += LabelMouseClick;     // подписываем на два события для статика
                         label.MouseDoubleClick += LabelMouseDoubleClick;
                         numStatic++;
                     }
