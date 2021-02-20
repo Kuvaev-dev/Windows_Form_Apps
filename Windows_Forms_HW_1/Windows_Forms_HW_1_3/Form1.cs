@@ -36,7 +36,7 @@ namespace Windows_Forms_HW_1_3
                 {
                     text = "Клик снаружи прямоугольника!";
                 }
-                // аналогично с наружным кликом
+                // аналогично с пограничным кликом
                 else if ((mea.X == 10 || mea.X == ClientSize.Width - 10) || (mea.Y == 10 || mea.Y == ClientSize.Height - 10))
                 {
                     text = "Клик на границе прямоугольника!";
