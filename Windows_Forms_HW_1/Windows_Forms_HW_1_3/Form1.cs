@@ -16,7 +16,7 @@ namespace Windows_Forms_HW_1_3
         public Form1()
         {
             InitializeComponent();
-            // инициализация компонентов
+            // инициализация движения и нажатия мыши
             this.MouseMove += MyMouseMove;
             this.MouseClick += MyMouseClick;
         }
@@ -31,7 +31,7 @@ namespace Windows_Forms_HW_1_3
                 {
                     Close();
                 }
-                // если надатие произошло снаружи, выводим сообщение об этом
+                // если нажатие произошло снаружи, выводим сообщение об этом
                 if ((mea.X < 10 || e.X > ClientSize.Width - 10) || (mea.Y < 10 || mea.Y > ClientSize.Height - 10))
                 {
                     text = "Клик снаружи прямоугольника!";
